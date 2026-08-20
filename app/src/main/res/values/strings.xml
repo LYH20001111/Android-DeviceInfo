@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">Device Information</string>
+    <string name="app_name">Device Info</string>
+    <string name="title_bar_name">Device Information</string>
 </resources>

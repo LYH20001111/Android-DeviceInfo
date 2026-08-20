@@ -13,7 +13,7 @@
         android:layout_height="?attr/actionBarSize"
         android:background="@drawable/toolbar_bg"
         android:elevation="4dp"
-        app:title="@string/app_name"
+        app:title="@string/title_bar_name"
         app:titleCentered="true"
         app:titleTextColor="@color/white" />
 
