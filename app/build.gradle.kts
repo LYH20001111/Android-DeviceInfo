@@ -20,7 +20,7 @@ android {
         minSdk = 24
         targetSdk = 36
         versionCode = 2
-        versionName = "2.0"
+        versionName = "2.0.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -57,9 +57,9 @@ androidComponents {
 
         // 4. 拼接文件名逻辑
         // 如果有渠道(flavor)，优先使用渠道名，否则使用项目名
-        var baseName = if (flavorName.isNotEmpty()) flavorName else rootProject.name
+        var baseName = "DEVICE-INFO"
 
-        val apkName = "${baseName}-${vCode}-${vName}-${buildTypeName}-${time}"
+        val apkName = "${baseName}-${vName}-${buildTypeName}-${time}"
         val finalFileName = apkName.uppercase() + ".apk"
 
         // 5. 核心修改：设置输出文件名
