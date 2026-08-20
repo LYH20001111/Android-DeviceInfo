@@ -1,0 +1,15 @@
+schema_version: 1
+module_path: ""
+title: Android 设备信息应用工程根
+scope:
+    - app/
+    - gradle/
+    - build.gradle.kts
+    - settings.gradle.kts
+    - gradle.properties
+    - gradlew.bat
+    - .gitignore
+    - gradlew
+source_files: []
+depends_on: []
+related_to: []

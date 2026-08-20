@@ -1,0 +1,23 @@
+# 知识卡导出索引文件
+schema_version: 1
+locale: zh-CN
+branch: main
+nodes_managed: true
+exported_at: "2026-08-20T03:47:42Z"
+modules:
+    "":
+        dir_name: Android 设备信息应用工程根
+        title: Android 设备信息应用工程根
+        scope:
+            - app/
+            - gradle/
+            - build.gradle.kts
+            - settings.gradle.kts
+            - gradle.properties
+            - gradlew.bat
+            - .gitignore
+            - gradlew
+        source_files: []
+        children: []
+        depends_on: []
+        related_to: []
