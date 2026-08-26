@@ -86,8 +86,8 @@ public class MainActivity extends AppCompatActivity {
             tvValue.setBackgroundColor(Color.parseColor("#FFEBEE"));
         }
 
-        row.addView(tvLabel, new TableRow.LayoutParams(0, TableRow.LayoutParams.WRAP_CONTENT, 2f));
-        row.addView(tvValue, new TableRow.LayoutParams(0, TableRow.LayoutParams.WRAP_CONTENT, 3f));
+        row.addView(tvLabel, new TableRow.LayoutParams(0, TableRow.LayoutParams.WRAP_CONTENT, 3f));
+        row.addView(tvValue, new TableRow.LayoutParams(0, TableRow.LayoutParams.WRAP_CONTENT, 2f));
         mTable.addView(row);
     }
 
@@ -134,8 +134,10 @@ public class MainActivity extends AppCompatActivity {
         // 可用显示区域
         Rect visibleFrame = new Rect();
         getWindow().getDecorView().getWindowVisibleDisplayFrame(visibleFrame);
-        rows.add(new String[]{"highlight", "可用区域",
+        rows.add(new String[]{"data", "可用区域",
                 visibleFrame.width() + " x " + visibleFrame.height() + " px"});
+        rows.add(new String[]{"highlight", "应用窗口高度 (含导航栏)",
+                visibleFrame.width() + " x " + (visibleFrame.height() + getNavigationBarHeight()) + " px"});
 
         // 副屏信息
         DisplayManager dmService = (DisplayManager) getSystemService(Context.DISPLAY_SERVICE);

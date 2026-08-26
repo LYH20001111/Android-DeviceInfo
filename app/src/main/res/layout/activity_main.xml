@@ -30,32 +30,6 @@
             android:stretchColumns="1"
             android:divider="@drawable/table_divider"
             android:showDividers="middle">
-
-            <!-- 表头 -->
-            <TableRow
-                android:background="#6200EE"
-                android:visibility="gone">
-
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="2"
-                    android:padding="12dp"
-                    android:text="属性"
-                    android:textColor="#FFFFFF"
-                    android:textSize="15sp"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="3"
-                    android:padding="12dp"
-                    android:text="值"
-                    android:textColor="#FFFFFF"
-                    android:textSize="15sp"
-                    android:textStyle="bold" />
-            </TableRow>
         </TableLayout>
     </ScrollView>
 </LinearLayout>
